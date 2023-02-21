@@ -1,6 +1,7 @@
 Excercise 0.4: New note diagram
 
-```sequenceDiagram;
+```
+sequenceDiagram
     participant browser
     participant server
     
