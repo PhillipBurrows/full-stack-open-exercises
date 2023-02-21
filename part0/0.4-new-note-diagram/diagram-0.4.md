@@ -1,7 +1,6 @@
 Excercise 0.4: New note diagram
 
-```mermaid
-graph TD;
+```sequenceDiagram;
     A-->B;
     A-->C;
     B-->D;
