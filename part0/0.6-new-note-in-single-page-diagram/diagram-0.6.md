@@ -1,4 +1,4 @@
-Exercise 0.5 Single page application diagram
+Exercise 0.6 New note in single page application diagram
 
 ```mermaid
 sequenceDiagram
@@ -20,10 +20,15 @@ sequenceDiagram
     server-->>browser: JavaScript file
     deactivate server
 
-    browser->>server: GET /exampleapp/data.json
+    browser->>server: HTTPS GET /exampleapp/data.json
     activate server
     server-->>browser: JSON file
     deactivate server
     
-    Note on browser: renders data into list
+    Note on browser: Renders data into list
+    
+    browser->>server: POST /exampleapp/new_note_spa
+    activate server
+
+    Note on browser: Adds new data to JSON locally and renders data into new list
 ```
