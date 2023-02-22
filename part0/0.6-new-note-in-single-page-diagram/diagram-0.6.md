@@ -29,6 +29,8 @@ sequenceDiagram
     
     browser->>server: POST /exampleapp/new_note_spa
     activate server
+    server-->>browser: 201 "created"
+    deactivate server
 
     Note over browser: Adds new data to JSON locally and renders data into new list
 ```
