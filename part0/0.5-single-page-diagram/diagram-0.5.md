@@ -22,7 +22,7 @@ sequenceDiagram
 
     browser->>server: GET /exampleapp/data.json
     activate server
-    server-->>browser: JavaScript file
+    server-->>browser: JSON file
     deactivate server
     
     Note right of browser: Updates local data and renders a new list
