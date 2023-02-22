@@ -25,10 +25,10 @@ sequenceDiagram
     server-->>browser: JSON file
     deactivate server
     
-    Note on browser: Renders data into list
+    Note over browser: Renders data into list
     
     browser->>server: POST /exampleapp/new_note_spa
     activate server
 
-    Note on browser: Adds new data to JSON locally and renders data into new list
+    Note over browser: Adds new data to JSON locally and renders data into new list
 ```

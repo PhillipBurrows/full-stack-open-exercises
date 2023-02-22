@@ -25,5 +25,5 @@ sequenceDiagram
     server-->>browser: JSON file
     deactivate server
     
-    Note on browser: renders data into list
+    Note over browser: renders data into list
 ```
